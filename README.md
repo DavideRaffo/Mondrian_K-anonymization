@@ -1,5 +1,3 @@
-"Mondrian k-anonymity" 
-
 Mondrian k-anonymization
 
 In this repository you can find two different scripts:
