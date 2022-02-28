@@ -8,7 +8,7 @@ In this repository, you can find two different scripts:
 
 python mondrian_k_anonymization.py inputFilename k r|s r|m, where:
 
-  - inputFilename: name of the input dataset file, where samples should be separated by ",",
+  - inputFilename: name of the input dataset file, where values in each row should be separated by ",",
 
   - k: desired level of k-anonymisation to achieve (positive integer),
   
