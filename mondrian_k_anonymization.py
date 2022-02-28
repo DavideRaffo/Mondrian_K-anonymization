@@ -185,7 +185,6 @@ def anonymize_df(df, partitions, cat_indices, mode='range'):
             anon_df.append([int(p[i])]+aggregate_values_for_partition)
   
     df_anon = pd.DataFrame(anon_df)
-    df_anon = df_anon.infer_objects()
     dfn1 = df_anon.sort_values(df_anon.columns[0])
     dfn1 = dfn1.iloc[:,1:]
     return np.array(dfn1)
