@@ -118,7 +118,7 @@ def partitioning(df, k, cat_indices, mode):
 		partition = working_partitions[0] # take the first in the list
 		working_partitions = working_partitions[1:] # remove it from list of working partitions
 		
-		if len(partition) <= 2*k: # if it is not at least 2k long, i.e. if i cannot get any new acceptable partition pair, at least k-long each
+		if len(partition) < 2*k: # if it is not at least 2k long, i.e. if i cannot get any new acceptable partition pair, at least k-long each
 			final_partitions.append(partition) # append it to final set of partitions
 			# and skip to the next partition
 		else:
